@@ -1,0 +1,40 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "plugins": ["babel", "react", "promise", "jsx-a11y", "import"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "generator-star-spacing": 0,
+    "jsx-quotes": [2, "prefer-single"],
+    "max-len": [2, 150, 2],
+    "semi": [2, "always"],
+    "object-curly-spacing": [2, "always"],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTaggedTemplates": true
+      }
+    ],
+    "no-sparse-arrays": "off"
+  },
+  "globals": {
+    "React": false
+  },
+  "settings": {
+    "import/resolver": {
+      "node": { "paths": ["src"] },
+      "babel-module": {}
+    }
+  }
+}
