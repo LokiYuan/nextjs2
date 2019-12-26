@@ -1,12 +1,15 @@
 import styled from 'styled-components';
+import { GridWrapper } from '@sorosora/grid';
 
-const Wrapper = styled.div``;
+const HeaderWrapper = styled.div``;
 
-const Header = (props) => {
+const Header = styled((props) => {
   const { ...otherProps } = props;
   return (
-    <Wrapper {...otherProps} />
+    <HeaderWrapper {...otherProps}>
+      <GridWrapper />
+    </HeaderWrapper>
   );
-};
+})``;
 
 export default Header;

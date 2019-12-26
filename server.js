@@ -5,7 +5,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-const appPort = 3000;
+const appPort = 3001;
 
 app.prepare()
   .then(() => {
