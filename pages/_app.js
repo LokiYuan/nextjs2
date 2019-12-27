@@ -1,7 +1,7 @@
 import Router from 'next/router';
 import NextSeo from 'next-seo';
-import { initGA, logPageView } from 'utils/googleAnalytics';
-import App, { Container } from 'next/app';
+// import { initGA, logPageView } from 'utils/googleAnalytics';
+import App from 'next/app';
 import Layout from 'components/Layout';
 import SEO from '../next-seo.config';
 
@@ -18,9 +18,9 @@ class MyApp extends App {
 
   componentDidMount() {
     if (process.env.server === 'production') {
-      initGA('UA-143780107-1');
-      logPageView();
-      Router.events.on('routeChangeComplete', logPageView);
+      // initGA('UA-143780107-1');
+      // logPageView();
+      // Router.events.on('routeChangeComplete', logPageView);
     }
   }
 
@@ -29,12 +29,10 @@ class MyApp extends App {
       Component, pageProps,
     } = this.props;
     return (
-      <Container>
-        <Layout>
-          <NextSeo config={SEO} />
-          <Component {...pageProps} />
-        </Layout>
-      </Container>
+      <Layout>
+        <NextSeo config={SEO} />
+        <Component {...pageProps} />
+      </Layout>
     );
   }
 }
