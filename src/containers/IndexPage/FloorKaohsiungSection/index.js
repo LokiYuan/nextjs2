@@ -223,7 +223,7 @@ const FloorSection = (props) => {
   return (
     <Wrapper {...props}>
       <GridWrapper>
-        <Title>高雄主題館</Title>
+        <Title>主題館</Title>
         <RatioBox ratio={['1172:560']}>
           {
             floorList.map(floor => (

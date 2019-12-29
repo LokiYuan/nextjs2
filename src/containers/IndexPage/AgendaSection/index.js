@@ -194,7 +194,7 @@ const locationList = [
   // },
   {
     id: 'kaohsiung',
-    name: '高雄場',
+    name: '台北場',
   },
 ];
 
@@ -272,9 +272,8 @@ const AgendaSection = (props) => {
               <ArrowContainer>
                 {
                   [
-                    '2019-07-22T07:00+08:00',
-                    '2019-07-23T07:00+08:00',
-                    '2019-07-24T07:00+08:00',
+                    '2020-01-15T07:00+08:00',
+                    '2020-01-16T07:00+08:00',
                   ].map((day, index) => {
                     const eventDate = (new Date(day)).getDate();
                     const isPrev = index === selectDay - 1;
@@ -295,9 +294,8 @@ const AgendaSection = (props) => {
               <DayContainer>
                 {
                   [
-                    '2019-07-22T07:00+08:00',
-                    '2019-07-23T07:00+08:00',
-                    '2019-07-24T07:00+08:00',
+                    '2020-01-15T07:00+08:00',
+                    '2020-01-16T07:00+08:00',
                   ].map((day, index) => {
                     const eventMonth = (new Date(day)).getMonth() + 1;
                     const eventDate = (new Date(day)).getDate();

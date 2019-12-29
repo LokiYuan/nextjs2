@@ -47,7 +47,7 @@ const Wrapper = styled.section`
   ${ImgWrapper} {
     position: relative;
     transform: rotate(-2deg);
-    width: 700px;
+    width: 1300px;
   }
   
   ${({ theme }) => theme.media.tablet} {
@@ -73,11 +73,11 @@ const Wrapper = styled.section`
 
 const MainSection = props => (
   <Wrapper {...props}>
-    <EKKWrapper>
-      <Img src='/static/ekk.svg' />
-    </EKKWrapper>
+    {/*<EKKWrapper>*/}
+      {/*<Img src='/static/ekk.svg' />*/}
+    {/*</EKKWrapper>*/}
     <ImgWrapper>
-      <Img src='/static/logo.svg' />
+      <Img src='/static/Banner_holo.png' type='width' />
     </ImgWrapper>
   </Wrapper>
 );
