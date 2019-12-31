@@ -73,9 +73,9 @@ const Wrapper = styled.section`
 
 const MainSection = props => (
   <Wrapper {...props}>
-    {/*<EKKWrapper>*/}
-      {/*<Img src='/static/ekk.svg' />*/}
-    {/*</EKKWrapper>*/}
+    <EKKWrapper>
+      <Img src='/static/FunctionNext_Logo.png' />
+    </EKKWrapper>
     <ImgWrapper>
       <Img src='/static/Banner_holo.png' type='width' />
     </ImgWrapper>

@@ -148,7 +148,7 @@ const TopicSection = props => (
       <Grid>
         <Col>
           <ImgWrapper>
-            <Img src='/static/ekk.svg' type='width' />
+            <Img src='/static/FunctionNext_Logo.png' type='width' />
           </ImgWrapper>
         </Col>
       </Grid>

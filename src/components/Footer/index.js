@@ -22,7 +22,7 @@ const Footer = styled((props) => {
   return (
     <Wrapper {...otherProps}>
       <GridWrapper>
-        <ContentWrapper>2019 教會青年國是論壇 Church Youth Forum</ContentWrapper>
+        <ContentWrapper>2020 青年未來方程式 Function Next</ContentWrapper>
       </GridWrapper>
     </Wrapper>
   );

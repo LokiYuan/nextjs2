@@ -234,7 +234,7 @@ const FloorSection = (props) => {
               >
                 <CloseBg onClick={() => setZoomPlace('')} />
                 <ImgWrapper onClick={() => setZoomPlace(floor.id)}>
-                  <Img src={`/static/floor-map-${floor.id}.svg`} type='width' />
+                  <Img src={'/static/FunctionNext_Location.jpeg'} type='width' />
                 </ImgWrapper>
               </FloorWrapper>
             ))
