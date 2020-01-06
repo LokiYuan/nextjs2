@@ -91,13 +91,17 @@ const Wrapper = styled.section`
     margin-top: -50px;
   }
   
+  ${ImgWrapper} {
+    transform: translate(0, 10px) skew(0deg, -10deg);
+  }
+  
   ${({ theme }) => theme.media.phone} {
     ${FeatureWrapper} {
       margin-top: 15px;
     }
   
     ${ImgWrapper} {
-      transform: translate(0, -140px);
+      transform: translate(0, -90px) skew(0deg, -10deg);
     }
   }
 `;
@@ -115,15 +119,16 @@ const TopicSection = props => (
       </Grid>
       <FeatureWrapper>
         <Grid>
-          <Col width={[3 / 12, 8 / 12, 1]}>
+          <Col width={[4 / 12, 8 / 12, 1]}>
             <Feature>
-              20位青年領袖表述5新領域的理念<br />
-              20個大學堂串串連之創新創業社團<br />
-              20場大學⽣才藝舞台直播活動<br />
-              2場青年高峰會
+              👉 公式一 <PhoneBr />新創藝：夢想可以當飯吃<br />
+              👉 公式二 <PhoneBr />新媒體：社群力讓你影響力加乘<br />
+              👉 公式三 <PhoneBr />新科技：認識未來趨勢 學習新工具<br />
+              👉 公式四 <PhoneBr />新創業：做個解決需要的實在人吧<br />
+              👉 公式五 <PhoneBr />新教育：學習從學校內到學校外
             </Feature>
           </Col>
-          <Col width={[3 / 12, 4 / 12, 1]}>
+          <Col width={[2 / 12, 4 / 12, 1]}>
             {/*<Feature>*/}
             {/*  215間國內外的教會與機構<br />*/}
             {/*  3676位牧者領袖<br />*/}
@@ -135,11 +140,10 @@ const TopicSection = props => (
           <Col width={[6 / 12, 8 / 12, 1]} offset={[0, 4 / 12, 0]}>
             <AlignRightWrapper>
               <Feature>
-                👉 公式一 <PhoneBr />新創藝：夢想可以當飯吃<br />
-                👉 公式二 <PhoneBr />新媒體：社群力讓你影響力加乘<br />
-                👉 公式三 <PhoneBr />新科技：認識未來趨勢 學習新工具<br />
-                👉 公式四 <PhoneBr />新創業：做個解決需要的實在人吧<br />
-                👉 公式五 <PhoneBr />新教育：學習從學校內到學校外
+                20位青年領袖表述5新領域的理念<br />
+                20個大學堂串串連之創新創業社團<br />
+                20場大學⽣才藝舞台直播活動<br />
+                2場青年高峰會
               </Feature>
             </AlignRightWrapper>
           </Col>

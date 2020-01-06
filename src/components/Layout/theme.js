@@ -36,8 +36,8 @@ const fontFamily = {
 };
 
 const color = {
-  primary: 'hsl(250, 57.1%, 32%)',
-  second: 'hsl(0, 0%, 0%)',
+  primary: 'hsl(12, 89%, 48%)',
+  second: 'hsl(254, 78%, 27%)',
   white: 'hsla(0, 0% ,89%)',
 };
 

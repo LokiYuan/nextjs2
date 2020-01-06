@@ -55,7 +55,7 @@ const Wrapper = styled.section`
       position: absolute;
       top: 50%;
       left: 0;
-      transform: translate(-51%, -62%) rotate(99deg) skew(-31deg, 0deg);
+      transform: translate(-39%, -50%) rotate(90deg) skew(0deg, 0deg);
     }
     
     ${ImgWrapper} {
@@ -74,10 +74,10 @@ const Wrapper = styled.section`
 const MainSection = props => (
   <Wrapper {...props}>
     <EKKWrapper>
-      <Img src='/static/FunctionNext_Logo.png' />
+      <Img src='/static/FunctionNext_Logo.png' type='width' />
     </EKKWrapper>
     <ImgWrapper>
-      <Img src='/static/Banner_holo.png' type='width' />
+      <Img src='/static/banner.png' type='width' />
     </ImgWrapper>
   </Wrapper>
 );

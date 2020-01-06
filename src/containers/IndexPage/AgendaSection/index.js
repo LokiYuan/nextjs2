@@ -278,6 +278,8 @@ const AgendaSection = (props) => {
                     const eventDate = (new Date(day)).getDate();
                     const isPrev = index === selectDay - 1;
                     const isNext = index === selectDay + 1;
+                    console.log('type', (isPrev && 'prev') || (isNext && 'next'));
+                    console.log('aaa', !(isPrev || isNext));
                     if (!(isPrev || isNext)) return null;
                     return (
                       <Arrow
